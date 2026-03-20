@@ -1,0 +1,2565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AmeriTrust Auto | Quality Used Cars, Financing &amp; Trade-In</title>
+  <meta name="description" content="Shop quality used cars, trucks, and SUVs at AmeriTrust Auto. Get pre-approved online, value your trade-in, and drive home today. Serving the area for 15+ years with 10,000+ customers helped." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AmeriTrust Auto | Quality Vehicles &amp; Easy Financing" />
+  <meta property="og:description" content="Browse inventory, get pre-approved, and value your trade. 15+ years, 10,000+ customers served." />
+  <meta property="og:url" content="https://ameritrust.com/" />
+  <meta property="og:image" content="https://ameritrust.com/wp-content/uploads/social-preview.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data: AutoDealer -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "AmeriTrust Auto",
+    "url": "https://ameritrust.com",
+    "telephone": "+18005954021",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "901 Houston St",
+      "addressLocality": "Fort Worth",
+      "addressRegion": "TX",
+      "postalCode": "76102"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "847"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-soft: #edf2f7;
+      --text: #0f172a;
+      --muted: #5b6778;
+      --line: #dbe4ee;
+      --dark: #0b1220;
+      --dark-2: #14233a;
+      --accent: #005D98;
+      --accent-2: #257FC3;
+      --gold: #f59e0b;
+      --shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+      --radius: 24px;
+      --max: 1320px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Manrope", "Segoe UI", Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select { font: inherit; }
+
+    :focus-visible {
+      outline: 3px solid rgba(37, 127, 195, 0.28);
+      outline-offset: 3px;
+    }
+
+    /* ── Skip link ───────────────────────────────── */
+    .skip-link {
+      position: absolute;
+      top: -48px;
+      left: 16px;
+      z-index: 200;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: var(--dark);
+      color: #fff;
+      font-weight: 800;
+    }
+    .skip-link:focus { top: 12px; }
+
+    /* ── Layout ──────────────────────────────────── */
+    .container {
+      width: min(var(--max), calc(100% - 24px));
+      margin: 0 auto;
+    }
+
+    /* ── Typography utilities ────────────────────── */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .eyebrow--light { color: #8fc4ec; }
+
+    .section-title {
+      margin: 12px 0 0;
+      font-size: clamp(30px, 5vw, 54px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    .section-copy {
+      max-width: 760px;
+      font-size: 18px;
+      color: var(--muted);
+    }
+
+    /* ── Buttons ─────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); opacity: 0.93; }
+    .btn:active { transform: translateY(0); }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(0, 93, 152, 0.28);
+    }
+    .btn-primary:hover { box-shadow: 0 16px 36px rgba(0, 93, 152, 0.42); }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+
+    .btn-light {
+      background: #fff;
+      color: var(--text);
+      border-color: var(--line);
+    }
+
+    /* ── Generic card ────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    /* ── Card action row ─────────────────────────── */
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    /* ── Shared card headings / copy ─────────────── */
+    .category-card h3, .feature-card h3, .quote-card h3,
+    .trade-card h3, .contact-card h3, .trust-card h3, .hero-panel h3 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .category-card p, .feature-card p, .quote-card p,
+    .trade-card p, .contact-card p, .trust-card p {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    /* ── Header ──────────────────────────────────── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid rgba(219, 228, 238, 0.9);
+    }
+
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+    }
+
+    .brand-name {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .nav-links, .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--muted);
+      transition: color 0.15s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    .phone-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-height: 46px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      font-weight: 800;
+      transition: border-color 0.15s;
+    }
+    .phone-pill:hover { border-color: var(--accent); }
+
+    .hamburger-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .hamburger-btn span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+    }
+
+    /* ── Trust bar ───────────────────────────────── */
+    .trust-bar {
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 16px 0;
+    }
+
+    .trust-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px 36px;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .trust-badge-icon { font-size: 17px; }
+
+    /* ── Featured inventory carousel ────────────── */
+    .featured-inventory {
+      padding: 52px 0;
+    }
+
+    .carousel-header {
+      margin-bottom: 20px;
+    }
+
+    .carousel-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .carousel-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: #fff;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+      color: var(--text);
+    }
+
+    .carousel-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      box-shadow: 0 6px 16px rgba(0, 93, 152, 0.28);
+    }
+
+    .carousel-btn:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+
+    .carousel-btn svg { pointer-events: none; }
+
+    .carousel-track {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      padding-bottom: 6px;
+    }
+
+    .carousel-track::-webkit-scrollbar { display: none; }
+
+    .vehicle-card {
+      flex: 0 0 248px;
+      scroll-snap-align: start;
+      border-radius: 18px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .vehicle-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+    }
+
+    .vehicle-img-wrap {
+      position: relative;
+    }
+
+    .vehicle-card-img {
+      width: 100%;
+      height: 154px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .fav-btn {
+      position: absolute;
+      top: 9px;
+      right: 9px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(6px);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      color: #94a3b8;
+      transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+      padding: 0;
+    }
+
+    .fav-btn:hover {
+      transform: scale(1.12);
+      background: rgba(255, 255, 255, 0.96);
+      color: #e53e3e;
+    }
+
+    .fav-btn.is-faved {
+      color: #e53e3e;
+      background: rgba(255, 255, 255, 0.96);
+    }
+
+    .fav-btn.is-faved svg {
+      fill: #e53e3e;
+    }
+
+    .fav-btn svg { pointer-events: none; }
+
+    .vehicle-card-body { padding: 14px; }
+
+    .vehicle-year-make {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    .vehicle-model {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-top: 2px;
+      line-height: 1.2;
+    }
+
+    .vehicle-trim {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 3px;
+    }
+
+    .vehicle-pricing {
+      display: flex;
+      flex-direction: row-reverse; /* lease (DOM second) lands on the left */
+      justify-content: space-between;
+      align-items: center;
+      margin: auto -14px -14px; /* break out of card-body padding */
+      padding: 12px 16px;
+      background: rgba(0, 93, 152, 0.07);
+      border-top: 1px solid rgba(0, 93, 152, 0.14);
+    }
+
+    .vehicle-price {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    .vehicle-lease {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+      line-height: 1.15;
+    }
+
+    .vehicle-lease small {
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    /* ── Quick view button (B2 — icon anchor, text reveals) ─────────── */
+    .quick-view-btn {
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      display: flex;
+      align-items: center;
+      height: 32px;
+      padding: 0 9px;
+      border-radius: 999px;
+      border: none;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(6px);
+      cursor: pointer;
+      color: var(--text);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: background 0.18s, box-shadow 0.18s;
+    }
+
+    .quick-view-btn:hover,
+    .vehicle-card:hover .quick-view-btn {
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.14);
+    }
+
+    .qv-icon {
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .qv-label {
+      max-width: 0;
+      overflow: hidden;
+      margin-left: 0;
+      transition: max-width 0.26s ease, margin-left 0.26s ease;
+    }
+
+    .vehicle-card:hover .qv-label {
+      max-width: 90px;
+      margin-left: 5px;
+    }
+
+    /* ── Vehicle detail modal ────────────────────── */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 300;
+      background: rgba(8, 14, 26, 0.72);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .modal-backdrop.is-open { opacity: 1; }
+    .modal-backdrop[hidden] { display: none; }
+
+    .modal-container {
+      background: #fff;
+      border-radius: 24px;
+      width: 100%;
+      max-width: 940px;
+      max-height: 92vh;
+      overflow-y: auto;
+      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.28);
+      transform: scale(0.96) translateY(10px);
+      transition: transform 0.22s ease;
+      position: relative;
+      scrollbar-width: thin;
+    }
+
+    .modal-backdrop.is-open .modal-container {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-close {
+      position: sticky;
+      top: 14px;
+      float: right;
+      margin: 14px 14px 0 0;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: #fff;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      z-index: 10;
+      transition: background 0.15s, color 0.15s;
+      flex-shrink: 0;
+    }
+
+    .modal-close:hover { background: var(--text); color: #fff; }
+
+    .modal-gallery {
+      padding: 0 22px;
+      margin-top: -36px;
+      clear: both;
+    }
+
+    .modal-main-img {
+      width: 100%;
+      height: 290px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+      transition: opacity 0.18s;
+    }
+
+    .modal-thumbs {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 4px;
+    }
+
+    .modal-thumbs::-webkit-scrollbar { display: none; }
+
+    .modal-thumb {
+      width: 76px;
+      height: 54px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      flex-shrink: 0;
+      border: 2px solid transparent;
+      opacity: 0.6;
+      transition: border-color 0.15s, opacity 0.15s;
+    }
+
+    .modal-thumb.is-active,
+    .modal-thumb:hover { border-color: var(--accent); opacity: 1; }
+
+    .modal-vehicle-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 16px 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .modal-year-make {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .modal-vehicle-name {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin: 2px 0;
+      line-height: 1.1;
+    }
+
+    .modal-trim-label { font-size: 13px; color: var(--muted); font-weight: 600; }
+
+    .modal-price-block { text-align: right; flex-shrink: 0; }
+
+    .modal-vehicle-price { font-size: 12px; color: var(--muted); font-weight: 600; }
+
+    .modal-vehicle-lease {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--accent);
+      line-height: 1.1;
+    }
+
+    .modal-vehicle-lease small {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .modal-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .modal-col { padding: 20px 22px; }
+    .modal-col + .modal-col { border-left: 1px solid var(--line); }
+
+    .modal-section-title {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .modal-section-title + .modal-section-title { margin-top: 20px; }
+
+    .modal-features {
+      list-style: none;
+      margin: 0 0 20px;
+      padding: 0;
+      display: grid;
+      gap: 6px;
+    }
+
+    .modal-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .modal-features li::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 10px;
+    }
+
+    .summary-item { display: flex; align-items: flex-start; gap: 8px; }
+
+    .summary-icon { font-size: 17px; flex-shrink: 0; margin-top: 1px; }
+
+    .summary-label {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--accent-2);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      display: block;
+    }
+
+    .summary-value {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text);
+      display: block;
+      margin-top: 1px;
+    }
+
+    /* Calculator */
+    .calc-vehicle-price { font-size: 13px; color: var(--muted); font-weight: 600; margin-bottom: 14px; }
+    .calc-vehicle-price strong { color: var(--text); }
+
+    .calc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+
+    .calc-field label {
+      display: block;
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 5px;
+    }
+
+    .calc-field input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .calc-field input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(0, 93, 152, 0.1);
+      outline: none;
+    }
+
+    .calc-field input[readonly] { background: var(--surface-soft); color: var(--muted); cursor: default; }
+
+    .calc-terms { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+
+    .calc-term-btn {
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+
+    .calc-term-btn.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    .calc-result {
+      margin-top: 14px;
+      padding: 16px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(0,93,152,0.06) 0%, rgba(37,127,195,0.04) 100%);
+      border: 1px solid rgba(0, 93, 152, 0.14);
+      text-align: center;
+    }
+
+    .calc-result-label { font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+    .calc-monthly-payment {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--accent);
+      line-height: 1.1;
+      margin: 4px 0;
+    }
+
+    .calc-monthly-payment small { font-size: 15px; font-weight: 700; color: var(--muted); }
+
+    .calc-breakdown { font-size: 12px; color: var(--muted); font-weight: 600; margin-top: 6px; }
+
+    .modal-approval-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 14px;
+      min-height: 48px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.15s, box-shadow 0.15s;
+      box-shadow: 0 8px 20px rgba(0,93,152,0.24);
+    }
+
+    .modal-approval-btn:hover { opacity: 0.92; box-shadow: 0 12px 28px rgba(0,93,152,0.36); }
+
+    /* ── Modal tab bar ───────────────────────────── */
+    .modal-tabs {
+      display: none;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .modal-tab-btn {
+      flex: 1;
+      padding: 13px 10px;
+      border: none;
+      border-bottom: 3px solid transparent;
+      background: none;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--muted);
+      cursor: pointer;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .modal-tab-btn.is-active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* Drag handle — mobile only */
+    .modal-drag-handle {
+      display: none;
+      width: 36px;
+      height: 4px;
+      background: var(--line);
+      border-radius: 2px;
+      margin: 10px auto 0;
+    }
+
+    /* ── Tablet (600–879px): single column + tabs ─ */
+    @media (max-width: 879px) {
+      .modal-tabs { display: flex; }
+      .modal-body { grid-template-columns: 1fr; }
+      .modal-col { display: none; padding: 18px 20px; }
+      .modal-col.is-active { display: block; }
+      .modal-col + .modal-col { border-left: none; }
+      .modal-main-img { height: 220px; }
+      .modal-vehicle-name { font-size: 22px; }
+      .modal-vehicle-lease { font-size: 24px; }
+    }
+
+    /* ── Mobile (< 600px): bottom sheet ──────────── */
+    @media (max-width: 599px) {
+      .modal-backdrop {
+        align-items: flex-end;
+        padding: 0;
+      }
+
+      .modal-container {
+        border-radius: 20px 20px 0 0;
+        max-height: 90vh;
+        max-width: 100%;
+        transform: translateY(100%);
+        transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+      }
+
+      .modal-backdrop.is-open .modal-container {
+        transform: translateY(0);
+      }
+
+      .modal-drag-handle { display: block; }
+      .modal-close { top: 8px; margin: 8px 12px 0 0; }
+      .modal-main-img { height: 200px; }
+      .modal-gallery { padding: 0 16px; margin-top: -30px; }
+      .modal-vehicle-header { padding: 12px 16px; }
+      .modal-col { padding: 16px; }
+      .calc-row { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ── Hero ────────────────────────────────────── */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(11, 18, 32, 0.96) 0%, rgba(20, 35, 58, 0.94) 52%, rgba(17, 44, 75, 0.9) 100%);
+      color: #fff;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 13, 24, 0.86) 0%, rgba(7, 13, 24, 0.72) 38%, rgba(7, 13, 24, 0.28) 100%),
+        url("https://images.pexels.com/photos/28891882/pexels-photo-28891882.jpeg?auto=compress&cs=tinysrgb&w=1800&h=1080&fit=crop") center 58% / cover no-repeat;
+    }
+
+    .hero .container { position: relative; z-index: 1; }
+
+    .hero-grid {
+      display: grid;
+      gap: 28px;
+      padding: 36px 0 72px;
+    }
+
+    .hero-content {
+      padding-top: 22px;
+      max-width: 760px;
+    }
+
+    .hero h1 {
+      margin: 16px 0 0;
+      font-size: clamp(38px, 7vw, 78px);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      max-width: 760px;
+    }
+
+    .hero-copy {
+      max-width: 680px;
+      margin-top: 22px;
+      font-size: 20px;
+      color: rgba(226, 232, 240, 0.9);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .hero-strip {
+      display: grid;
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .hero-strip-card {
+      padding: 13px 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-strip-card strong { display: block; font-size: 15px; }
+
+    .hero-panel {
+      padding: 24px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.98);
+      color: var(--text);
+      box-shadow: 0 24px 60px rgba(4, 10, 20, 0.24);
+    }
+
+    .hero-panel h2 {
+      margin: 10px 0 0;
+      font-size: 26px;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+    }
+
+    .hero-panel > p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .panel-trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .panel-trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    /* ── Forms ───────────────────────────────────── */
+    .quick-form, .approval-form {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .field-grid { display: grid; gap: 12px; }
+
+    .field label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    .field-required { color: var(--accent); }
+
+    .field input, .field select {
+      width: 100%;
+      min-height: 52px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      color: var(--text);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .field input:focus, .field select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(0, 93, 152, 0.1);
+      outline: none;
+    }
+
+    .form-note {
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      margin: 0;
+    }
+
+    /* ── Sections ────────────────────────────────── */
+    section { padding: 72px 0; }
+
+    .section-grid, .inventory-grid, .stats-grid, .feature-grid,
+    .quote-grid, .footer-grid, .contact-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .inventory-section .section-grid,
+    .trade-section .section-grid {
+      align-items: start;
+    }
+
+    .financing-section .section-grid {
+      align-items: stretch;
+    }
+
+    .financing-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Equal-height contact cards */
+    .contact-section .section-grid {
+      align-items: stretch;
+    }
+
+    .contact-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-card .card-actions {
+      margin-top: auto;
+      padding-top: 22px;
+    }
+
+    .location-map {
+      width: 100%;
+      height: 180px;
+      border: 0;
+      border-radius: 14px;
+      margin-top: 16px;
+      display: block;
+    }
+
+    /* ── Inventory grid ──────────────────────────── */
+    .inventory-grid, .feature-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .category-card, .feature-card, .quote-card,
+    .stat-card, .trade-card, .contact-card {
+      padding: 22px;
+      border-radius: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .category-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .category-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 24px 56px rgba(15, 23, 42, 0.13);
+    }
+
+    .category-card img, .financing-card img,
+    .trade-card img, .contact-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 18px;
+      margin-bottom: 16px;
+    }
+
+    /* ── Stats ───────────────────────────────────── */
+    .stat-card {
+      background: linear-gradient(180deg, #fff 0%, #f7fafe 100%);
+      text-align: center;
+    }
+
+    .stat-card strong {
+      display: block;
+      font-size: 38px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: var(--accent);
+    }
+
+    .stat-card span {
+      display: block;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    /* ── Financing section ───────────────────────── */
+    .financing-section {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(241,246,251,.94) 100%),
+        url("https://ameritrust.com/wp-content/uploads/2025/01/pexels-tdcat-70912-scaled.jpg") center center / cover no-repeat;
+    }
+
+    .financing-card { padding: 28px; flex-direction: column; }
+
+    .financing-checks {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .financing-checks li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      font-weight: 700;
+      list-style: none;
+      color: var(--text);
+    }
+
+    .financing-checks li::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    /* ── Feature cards (Why AmeriTrust) ──────────── */
+    .feature-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(0, 93, 152, 0.1) 0%, rgba(37, 127, 195, 0.07) 100%);
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    /* ── Reviews ─────────────────────────────────── */
+    .quote-card { background: linear-gradient(180deg, #fff 0%, #f8fbff 100%); }
+
+    .stars {
+      color: var(--gold);
+      font-size: 15px;
+      letter-spacing: 0.08em;
+    }
+
+    .quote-card blockquote {
+      margin: 0;
+      padding: 0;
+    }
+
+    .quote-headline {
+      margin: 12px 0 0;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+
+    .reviewer-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .reviewer-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--surface-soft);
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .reviewer-info strong { display: block; font-size: 14px; }
+    .reviewer-info span { font-size: 13px; color: var(--muted); }
+
+    /* ── Trade section ───────────────────────────── */
+    .trade-section { background: var(--dark); color: #fff; }
+
+    .trade-section .section-copy,
+    .trade-section p { color: rgba(226, 232, 240, 0.84); }
+
+    .trade-card {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.12);
+      box-shadow: none;
+    }
+
+    /* ── Contact section ─────────────────────────── */
+    .contact-section { background: #fff; }
+
+    .hours-grid { display: grid; gap: 0; margin-top: 10px; }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row span:last-child { font-weight: 700; }
+
+    /* ── Footer ──────────────────────────────────── */
+    .footer {
+      padding: 36px 0 100px;
+      background: var(--dark);
+      color: #d4dbe5;
+    }
+
+    .footer-grid { align-items: center; }
+
+    .footer-brand { color: #fff; }
+
+    .footer-desc {
+      margin: 10px 0 0;
+      max-width: 620px;
+      color: #b7c2d1;
+      font-size: 14px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .footer-links a { transition: color 0.15s; }
+    .footer-links a:hover { color: #fff; }
+
+    /* ── Mobile sticky bar ───────────────────────── */
+    .mobile-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 120;
+      padding: 10px;
+      background: rgba(29, 50, 74, 0.92);
+      border-top: 1px solid rgba(143, 196, 236, 0.22);
+      backdrop-filter: blur(12px);
+    }
+
+    .mobile-bar-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: min(var(--max), calc(100% - 16px));
+      margin: 0 auto;
+    }
+
+    /* ── Responsive: Desktop ─────────────────────── */
+    @media (min-width: 880px) {
+      .container { width: min(var(--max), calc(100% - 48px)); }
+
+      .hero-grid, .section-grid, .contact-grid, .footer-grid {
+        grid-template-columns: 1.05fr 0.95fr;
+      }
+
+      .hero-strip, .trust-grid, .stats-grid, .quote-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+      .footer-grid { grid-template-columns: 1fr auto; }
+
+      /* Critical: hide mobile bar on desktop */
+      .mobile-bar { display: none; }
+    }
+
+    @media (min-width: 1120px) {
+      .inventory-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    }
+
+    /* ── Responsive: Mobile ──────────────────────── */
+    @media (max-width: 879px) {
+      .nav-links, .nav-actions .btn-primary, .phone-pill { display: none; }
+      .hamburger-btn { display: flex; }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(7, 13, 24, 0.84) 0%, rgba(7, 13, 24, 0.76) 46%, rgba(7, 13, 24, 0.42) 100%),
+          url("https://images.pexels.com/photos/28891882/pexels-photo-28891882.jpeg?auto=compress&cs=tinysrgb&w=1400&h=1600&fit=crop") 62% center / cover no-repeat;
+      }
+
+      .hero h1 { font-size: clamp(34px, 9vw, 52px); }
+      .hero-copy { font-size: 17px; }
+
+      .stat-card strong { font-size: 30px; }
+    }
+
+    @media (max-width: 600px) {
+      .inventory-grid, .feature-grid { grid-template-columns: 1fr; }
+      section { padding: 52px 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="AmeriTrust Auto - go to top">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="https://ameritrust.com/wp-content/uploads/2026/03/ameritrust-icon-red-flat.png" alt="" width="52" height="52" style="object-fit:contain;" />
+        </div>
+        <div>
+          <div class="brand-name">AmeriTrust Auto</div>
+          <div class="brand-sub">Quality Vehicles &amp; Easy Financing</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#featured-inventory">Inventory</a>
+        <a href="#financing">Financing</a>
+        <a href="#trade">Trade-In</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="phone-pill" href="tel:18005954021" aria-label="Call AmeriTrust Auto at 1-800-595-4021">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.38 1.22 2 2 0 012.36 0h3a2 2 0 012 1.72c.13 1 .36 1.97.71 2.91a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.17-.76a2 2 0 012.11-.45c.94.35 1.91.58 2.91.71A2 2 0 0122 16.92z"/></svg>
+          1-800-595-4021
+        </a>
+        <a class="btn btn-primary" href="#approval">Get Pre-Approved</a>
+        <button class="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══ HERO ═══════════════════════════════════════════════════════ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <div class="eyebrow eyebrow--light">Trusted by 10,000+ drivers since 2009</div>
+          <h1 id="hero-title">Find your next vehicle. Lock in your payment. Drive home today.</h1>
+          <p class="hero-copy">
+            Shop our full inventory of quality used cars, trucks, and SUVs-then get pre-approved in minutes.
+            No runaround. No hidden fees. Real numbers that work for your budget.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#inventory">Browse Inventory</a>
+            <a class="btn btn-secondary" href="#approval">Get Pre-Approved</a>
+            <a class="btn btn-secondary" href="#trade">Value My Trade</a>
+          </div>
+
+          <div class="hero-strip" aria-label="Key advantages">
+            <div class="hero-strip-card">
+              <strong>All Credit Welcome</strong>
+            </div>
+            <div class="hero-strip-card">
+              <strong>Know Your Payment First</strong>
+            </div>
+            <div class="hero-strip-card">
+              <strong>Trade-In Made Simple</strong>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Vehicle search form">
+          <div class="eyebrow">Find My Vehicle</div>
+          <h2>Tell us what you need-we'll match you.</h2>
+          <p>Four quick answers and we'll show you inventory that fits your style and budget.</p>
+
+          <form class="quick-form" action="#inventory" method="get">
+            <div class="field-grid">
+              <div class="field">
+                <label for="body-style">Body style</label>
+                <select id="body-style" name="body-style">
+                  <option value="">Any style</option>
+                  <option value="suv">SUV</option>
+                  <option value="truck">Truck</option>
+                  <option value="sedan">Sedan</option>
+                  <option value="coupe">Coupe</option>
+                  <option value="van">Van</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="monthly-budget">Monthly budget</label>
+                <select id="monthly-budget" name="monthly-budget">
+                  <option value="">Any budget</option>
+                  <option value="under-450">Under $450/mo</option>
+                  <option value="450-600">$450 – $600/mo</option>
+                  <option value="600-750">$600 – $750/mo</option>
+                  <option value="750-plus">$750+/mo</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="buying-path">I want to</label>
+                <select id="buying-path" name="buying-path">
+                  <option value="finance">Finance a vehicle</option>
+                  <option value="lease">Lease a vehicle</option>
+                  <option value="compare">Compare finance vs. lease</option>
+                  <option value="first-time">First-time buyer help</option>
+                  <option value="rebuild">Rebuild my credit</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="timeline">When do you want to buy?</label>
+                <select id="timeline" name="timeline">
+                  <option value="this-week">This week</option>
+                  <option value="this-month">This month</option>
+                  <option value="researching">Just researching</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%;">See My Matches →</button>
+          </form>
+
+          <div class="panel-trust-badges" aria-label="Form trust indicators">
+            <span class="panel-trust-badge">🔒 Soft check only</span>
+            <span class="panel-trust-badge">⚡ Same-day decisions</span>
+            <span class="panel-trust-badge">✅ All credit welcome</span>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ═══ TRUST BAR ════════════════════════════════════════════════════ -->
+    <div class="trust-bar" role="complementary" aria-label="Trust and credibility">
+      <div class="container trust-bar-inner">
+        <div class="trust-badge">
+          <span class="trust-badge-icon" aria-hidden="true">⭐</span>
+          4.9 Google Rating (847 reviews)
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon" aria-hidden="true">🏆</span>
+          BBB Accredited Business
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon" aria-hidden="true">✅</span>
+          15+ Years in Business
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon" aria-hidden="true">👥</span>
+          10,000+ Customers Served
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon" aria-hidden="true">🔒</span>
+          No-Pressure Guarantee
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ FEATURED INVENTORY CAROUSEL ════════════════════════════════ -->
+    <section class="featured-inventory" id="featured-inventory" aria-labelledby="featured-title">
+      <div class="container">
+
+        <div class="carousel-header">
+          <div class="eyebrow">Featured Inventory</div>
+          <h2 class="section-title" id="featured-title" style="font-size:clamp(24px,3.5vw,36px);">Vehicles Available Now</h2>
+        </div>
+
+        <div class="carousel-wrapper">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Scroll left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+
+          <div class="carousel-track" id="carousel-track" role="list">
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/2920064/pexels-photo-2920064.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2024 Ford F-150 XLT" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2024 · Ford</div>
+              <div class="vehicle-model">F-150</div>
+              <div class="vehicle-trim">XLT SuperCrew 4x4</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$42,995</div>
+                <div class="vehicle-lease">$589/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2023 Toyota RAV4 XLE" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2023 · Toyota</div>
+              <div class="vehicle-model">RAV4</div>
+              <div class="vehicle-trim">XLE Premium AWD</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$34,500</div>
+                <div class="vehicle-lease">$429/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/3802510/pexels-photo-3802510.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2024 Chevrolet Silverado 1500 LT" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2024 · Chevrolet</div>
+              <div class="vehicle-model">Silverado 1500</div>
+              <div class="vehicle-trim">LT Crew Cab 4WD</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$48,750</div>
+                <div class="vehicle-lease">$639/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2022 Honda Accord Sport" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2022 · Honda</div>
+              <div class="vehicle-model">Accord</div>
+              <div class="vehicle-trim">Sport 2.0T CVT</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$27,995</div>
+                <div class="vehicle-lease">$349/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/1231643/pexels-photo-1231643.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2023 Jeep Grand Cherokee Limited" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2023 · Jeep</div>
+              <div class="vehicle-model">Grand Cherokee</div>
+              <div class="vehicle-trim">Limited 4x4</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$51,200</div>
+                <div class="vehicle-lease">$679/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2023 Hyundai Tucson SEL" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2023 · Hyundai</div>
+              <div class="vehicle-model">Tucson</div>
+              <div class="vehicle-trim">SEL Convenience AWD</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$31,995</div>
+                <div class="vehicle-lease">$399/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2023 BMW 3 Series 330i" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2023 · BMW</div>
+              <div class="vehicle-model">3 Series</div>
+              <div class="vehicle-trim">330i xDrive Sedan</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$39,800</div>
+                <div class="vehicle-lease">$499/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/1719648/pexels-photo-1719648.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2023 Mazda CX-5 Touring" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2023 · Mazda</div>
+              <div class="vehicle-model">CX-5</div>
+              <div class="vehicle-trim">Touring AWD</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$33,200</div>
+                <div class="vehicle-lease">$419/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/4674104/pexels-photo-4674104.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2024 GMC Canyon AT4" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2024 · GMC</div>
+              <div class="vehicle-model">Canyon</div>
+              <div class="vehicle-trim">AT4 Crew Cab 4WD</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$44,995</div>
+                <div class="vehicle-lease">$579/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2021 Subaru Outback Onyx Edition" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2021 · Subaru</div>
+              <div class="vehicle-model">Outback</div>
+              <div class="vehicle-trim">Onyx Edition XT CVT</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$29,500</div>
+                <div class="vehicle-lease">$369/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="vehicle-card" role="listitem">
+            <img class="vehicle-card-img" src="https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="2023 Kia Telluride EX" loading="lazy" width="600" height="400" />
+            <div class="vehicle-card-body">
+              <div class="vehicle-year-make">2023 · Kia</div>
+              <div class="vehicle-model">Telluride</div>
+              <div class="vehicle-trim">EX AWD</div>
+              <div class="vehicle-pricing">
+                <div class="vehicle-price">$46,800</div>
+                <div class="vehicle-lease">$599/mo<small>Est. lease · 36 mo</small></div>
+              </div>
+            </div>
+          </article>
+
+          </div><!-- /.carousel-track -->
+
+          <button class="carousel-btn" id="carousel-next" aria-label="Scroll right">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div><!-- /.carousel-wrapper -->
+
+      </div>
+    </section>
+
+    <!-- ═══ INVENTORY ════════════════════════════════════════════════════ -->
+    <section class="inventory-section" id="inventory" aria-labelledby="inventory-title">
+      <div class="container">
+        <div class="eyebrow">Browse by Category</div>
+        <h2 class="section-title" id="inventory-title">Find the right vehicle for your life and budget.</h2>
+        <p class="section-copy">
+          Whether you need space for the family, power for the job site, or a payment that won't stretch your
+          budget-we have options. Start by category or search by monthly payment.
+        </p>
+
+        <div class="inventory-grid" style="margin-top:24px;">
+          <article class="category-card">
+            <img
+              alt="Spacious family SUV available at AmeriTrust Auto"
+              height="440"
+              loading="lazy"
+              src="https://ameritrust.com/wp-content/uploads/2024/12/serves-section-1.jpg"
+              width="700"
+            />
+            <h3>Shop SUVs</h3>
+            <p>Spacious, capable, and payment-friendly. Perfect for families, commuters, and road trippers.</p>
+            <div class="card-actions">
+              <a class="btn btn-light" href="#inventory">View SUV Options →</a>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img
+              alt="Work truck inventory at AmeriTrust Auto"
+              height="440"
+              loading="lazy"
+              src="https://ameritrust.com/wp-content/uploads/2026/01/photo-content-block-680x340-1.jpg"
+              width="700"
+            />
+            <h3>Shop Trucks</h3>
+            <p>Ready for work, towing, and serious utility. Crew cabs, half-tons, and heavy-duty options.</p>
+            <div class="card-actions">
+              <a class="btn btn-light" href="#inventory">View Truck Options →</a>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img
+              alt="Affordable payment-friendly vehicles at AmeriTrust Auto"
+              height="440"
+              loading="lazy"
+              src="https://images.pexels.com/photos/28891882/pexels-photo-28891882.jpeg?auto=compress&cs=tinysrgb&w=700&h=440&fit=crop"
+              width="700"
+            />
+            <h3>Shop by Payment</h3>
+            <p>Start with a budget that works, then we'll match the right vehicle to fit it. No guessing required.</p>
+            <div class="card-actions">
+              <a class="btn btn-light" href="#approval">Shop by Budget →</a>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img
+              alt="AmeriTrust Auto sales advisor helping a customer choose a vehicle"
+              height="440"
+              loading="lazy"
+              src="https://images.pexels.com/photos/7144226/pexels-photo-7144226.jpeg?auto=compress&cs=tinysrgb&w=700&h=440&fit=crop"
+              width="700"
+            />
+            <h3>Need Help Choosing?</h3>
+            <p>First-time buyer or upgrading from a trade? Our advisors help you find the right fit-no pressure.</p>
+            <div class="card-actions">
+              <a class="btn btn-light" href="#contact">Talk to an Advisor →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FINANCING ════════════════════════════════════════════════════ -->
+    <section class="financing-section" id="financing" aria-labelledby="financing-title">
+      <div class="container section-grid">
+
+        <div class="financing-card card">
+          <div class="eyebrow">Easy Financing</div>
+          <h2 class="section-title" id="financing-title" style="font-size:clamp(30px,4vw,46px);">Know your payment before you fall in love with the car.</h2>
+          <p class="section-copy">
+            We partner with multiple lenders to find the best rate for your situation-whether you have excellent
+            credit, are buying for the first time, or are rebuilding. Get pre-approved in minutes with no impact
+            to your credit score to start.
+          </p>
+
+          <ul class="financing-checks" aria-label="Financing benefits">
+            <li>Get pre-approved before you commit to a vehicle</li>
+            <li>Compare finance and lease options side by side</li>
+            <li>Support for first-time buyers and credit rebuilding</li>
+            <li>No-pressure process-you stay in control the whole time</li>
+            <li>Fast Decisions &amp; Same-Day Funding</li>
+            <li>Simplified Paperwork &amp; Fewer Delays</li>
+          </ul>
+        </div>
+
+        <div class="financing-card card" id="approval">
+          <div class="eyebrow">Start Here</div>
+          <h3 style="margin-top:10px; font-size:26px; letter-spacing:-0.02em; line-height:1.1;">Get Pre-Approved in Minutes</h3>
+          <p style="margin:10px 0 0; color:var(--muted);">No hard credit pull to start. We'll match you with real options before you set foot on the lot.</p>
+
+          <form class="approval-form" action="/apply" method="post" novalidate>
+            <div class="field">
+              <label for="full-name">
+                Full name <span class="field-required" aria-hidden="true">*</span>
+              </label>
+              <input id="full-name" name="name" type="text" placeholder="Jane Smith" autocomplete="name" required aria-required="true" />
+            </div>
+            <div class="field">
+              <label for="phone-number">
+                Phone number <span class="field-required" aria-hidden="true">*</span>
+              </label>
+              <input id="phone-number" name="phone" type="tel" placeholder="(555) 000-0000" autocomplete="tel" required aria-required="true" />
+            </div>
+            <div class="field">
+              <label for="email-address">
+                Email address <span class="field-required" aria-hidden="true">*</span>
+              </label>
+              <input id="email-address" name="email" type="email" placeholder="jane@example.com" autocomplete="email" required aria-required="true" />
+            </div>
+            <div class="field">
+              <label for="credit-profile">Credit profile</label>
+              <select id="credit-profile" name="credit-profile">
+                <option value="prime">Prime (700+)</option>
+                <option value="near-prime">Near-prime (620–699)</option>
+                <option value="first-time">First-time buyer</option>
+                <option value="rebuilding">Credit rebuilding (under 620)</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%;">Start My Pre-Approval →</button>
+            <p class="form-note">🔒 Soft credit check only. No impact to your score to start.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ WHY AMERITRUST ════════════════════════════════════════════════ -->
+    <section aria-labelledby="why-title">
+      <div class="container">
+        <div class="eyebrow">Why AmeriTrust Auto</div>
+        <h2 class="section-title" id="why-title">A dealership experience built around you-not us.</h2>
+        <p class="section-copy">
+          We don't run the standard dealership playbook. No bait-and-switch pricing, no hours of back-and-forth,
+          no bouncing between departments. Just a straightforward path from browsing to driving.
+        </p>
+
+        <div class="feature-grid" style="margin-top:24px;">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🚗</div>
+            <h3>Real prices, no games</h3>
+            <p>Every vehicle is priced upfront and honestly. No sticker shock, no negotiation pressure.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">✅</div>
+            <h3>All credit welcome</h3>
+            <p>From great credit to rebuilding-we've helped thousands of buyers find a path that actually works.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🤝</div>
+            <h3>One team, start to finish</h3>
+            <p>Your advisor handles inventory, financing, and trade-in. No handoffs. No miscommunication.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">📱</div>
+            <h3>Start online, finish fast</h3>
+            <p>Get pre-approved and value your trade from your phone. Walk in knowing your numbers already.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ REVIEWS ══════════════════════════════════════════════════════ -->
+    <section id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="eyebrow">Customer Reviews</div>
+        <h2 class="section-title" id="reviews-title">Don't take our word for it.</h2>
+        <p class="section-copy">
+          Over 10,000 drivers have bought their next vehicle through AmeriTrust Auto.
+          Here's what they're saying.
+        </p>
+
+        <div class="quote-grid" style="margin-top:24px;">
+          <article class="quote-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p class="quote-headline">"Got approved same day with a payment I could actually afford."</p>
+              <p>I came in expecting the runaround. Instead I walked out with a great SUV and a payment $80 less than I expected.</p>
+            </blockquote>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar" aria-hidden="true">MR</div>
+              <div class="reviewer-info">
+                <strong>Marcus R.</strong>
+                <span>Verified Google Review · SUV buyer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="quote-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p class="quote-headline">"They handled my trade-in and financing in one visit."</p>
+              <p>Knew my exact trade value before I sat down. That made the whole upgrade decision easy because the numbers were real from the start.</p>
+            </blockquote>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar" aria-hidden="true">SL</div>
+              <div class="reviewer-info">
+                <strong>Sarah L.</strong>
+                <span>Verified Google Review · Truck buyer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="quote-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p class="quote-headline">"First-time buyer and they made it so easy."</p>
+              <p>I had no idea where to start. My advisor walked me through everything-credit, payments, insurance. Left feeling confident, not overwhelmed.</p>
+            </blockquote>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar" aria-hidden="true">TK</div>
+              <div class="reviewer-info">
+                <strong>Tyra K.</strong>
+                <span>Verified Google Review · Sedan buyer</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="stats-grid" style="margin-top:18px;">
+          <div class="stat-card">
+            <strong>4.9</strong>
+            <span>Average Google rating across 847 reviews</span>
+          </div>
+          <div class="stat-card">
+            <strong>15+</strong>
+            <span>Years serving local drivers</span>
+          </div>
+          <div class="stat-card">
+            <strong>10k+</strong>
+            <span>Customers helped and counting</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TRADE-IN ══════════════════════════════════════════════════════ -->
+    <section class="trade-section" id="trade" aria-labelledby="trade-title">
+      <div class="container section-grid">
+        <div>
+          <div class="eyebrow eyebrow--light">Trade-In Value</div>
+          <h2 class="section-title" id="trade-title">Know what your car is worth before you shop.</h2>
+          <p class="section-copy">
+            Your trade-in affects your monthly payment more than almost anything else. Get a real number
+            upfront so you can shop with confidence-not guesswork. Takes less than 2 minutes.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Value My Trade Now</a>
+            <a class="btn btn-secondary" href="#approval">Get Pre-Approved First</a>
+          </div>
+        </div>
+
+        <article class="trade-card">
+          <img
+            alt="Trade in your current vehicle at AmeriTrust Auto for a fair, transparent value"
+            height="520"
+            loading="lazy"
+            src="https://ameritrust.com/wp-content/uploads/2024/12/serves-section-1.jpg"
+            width="900"
+          />
+          <h3>Real trade value. No lowball offers.</h3>
+          <p>We use current market data to give you a fair, transparent trade-in value-then apply it directly to your purchase or payoff balance.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══════════════════════════════════════════════════════ -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container section-grid">
+
+        <article class="contact-card">
+          <img
+            alt="AmeriTrust Auto sales team ready to help you find the right vehicle"
+            height="520"
+            loading="lazy"
+            src="https://ameritrust.com/wp-content/uploads/2024/12/financing-section-1.jpg"
+            width="900"
+          />
+          <h3 id="contact-title">Talk to a real person today</h3>
+          <p>Prefer to talk before you visit? Our advisors answer questions, check inventory availability, and help you prep for your best deal. No scripts, no pressure.</p>
+          <div class="card-actions" style="margin-top:18px;">
+            <a class="btn btn-primary" href="tel:18005954021">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.38 1.22 2 2 0 012.36 0h3a2 2 0 012 1.72c.13 1 .36 1.97.71 2.91a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.17-.76a2 2 0 012.11-.45c.94.35 1.91.58 2.91.71A2 2 0 0122 16.92z"/></svg>
+              Call 1-800-595-4021
+            </a>
+          </div>
+        </article>
+
+        <article class="contact-card">
+          <div class="eyebrow">Visit Us</div>
+          <h3 style="margin-top:12px;">Hours &amp; Location</h3>
+
+          <address style="font-style:normal; margin-top:14px;">
+            <strong>AmeriTrust Auto</strong><br />
+            901 Houston St<br />
+            Fort Worth, TX 76102, USA
+          </address>
+
+          <iframe
+            class="location-map"
+            title="AmeriTrust Auto location - 901 Houston St, Fort Worth, TX"
+            src="https://www.google.com/maps?q=901+Houston+St,+Fort+Worth,+TX+76102&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <div class="hours-grid" style="margin-top:16px;" aria-label="Business hours">
+            <div class="hours-row"><span>Mon – Fri</span><span>9:00 AM – 7:00 PM</span></div>
+            <div class="hours-row"><span>Saturday</span><span>9:00 AM – 6:00 PM</span></div>
+            <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-name footer-brand">AmeriTrust Auto</div>
+        <p class="footer-desc">
+          Browse vehicles, get pre-approved, value your trade, and drive home the same day.
+          Serving drivers for over 15 years with a process built around you.
+        </p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#inventory">Inventory</a>
+        <a href="#financing">Financing</a>
+        <a href="#trade">Trade-In</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ═══ VEHICLE DETAIL MODAL ════════════════════════════════════════ -->
+  <div class="modal-backdrop" id="vehicle-modal" role="dialog" aria-modal="true" aria-labelledby="modal-vehicle-name" hidden>
+    <div class="modal-container" id="modal-container">
+
+      <div class="modal-drag-handle" aria-hidden="true"></div>
+
+      <button class="modal-close" id="modal-close" aria-label="Close vehicle detail">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <!-- Gallery -->
+      <div class="modal-gallery">
+        <img class="modal-main-img" id="modal-main-img" src="" alt="" />
+        <div class="modal-thumbs" id="modal-thumbs"></div>
+      </div>
+
+      <!-- Vehicle header -->
+      <div class="modal-vehicle-header">
+        <div>
+          <div class="modal-year-make" id="modal-year-make"></div>
+          <div class="modal-vehicle-name" id="modal-vehicle-name"></div>
+          <div class="modal-trim-label" id="modal-trim-label"></div>
+        </div>
+        <div class="modal-price-block">
+          <div class="modal-vehicle-price" id="modal-vehicle-price"></div>
+          <div class="modal-vehicle-lease" id="modal-vehicle-lease"></div>
+        </div>
+      </div>
+
+      <!-- Tab bar (visible on tablet + mobile only) -->
+      <div class="modal-tabs" role="tablist" aria-label="Vehicle detail sections">
+        <button class="modal-tab-btn is-active" role="tab" aria-selected="true" aria-controls="modal-panel-details" data-tab="details">Details</button>
+        <button class="modal-tab-btn" role="tab" aria-selected="false" aria-controls="modal-panel-calculator" data-tab="calculator">Calculator</button>
+      </div>
+
+      <!-- Two-column body -->
+      <div class="modal-body">
+
+        <!-- Left: Features + Vehicle Summary -->
+        <div class="modal-col is-active" id="modal-panel-details" role="tabpanel">
+          <p class="modal-section-title">Features</p>
+          <ul class="modal-features" id="modal-features"></ul>
+          <p class="modal-section-title">Vehicle Summary</p>
+          <div class="summary-grid" id="modal-summary"></div>
+        </div>
+
+        <!-- Right: Payment Calculator -->
+        <div class="modal-col" id="modal-panel-calculator" role="tabpanel">
+          <p class="modal-section-title">Payment Calculator</p>
+          <p class="calc-vehicle-price">Vehicle price: <strong id="calc-price-display"></strong></p>
+
+          <div class="calc-row">
+            <div class="calc-field">
+              <label for="calc-down">Down Payment</label>
+              <input type="number" id="calc-down" value="2000" min="0" />
+            </div>
+            <div class="calc-field">
+              <label for="calc-trade">Trade-In Value</label>
+              <input type="number" id="calc-trade" value="0" min="0" />
+            </div>
+          </div>
+
+          <div class="calc-row">
+            <div class="calc-field">
+              <label for="calc-tax">Sales Tax (TX 6.25%)</label>
+              <input type="text" id="calc-tax" readonly />
+            </div>
+            <div class="calc-field">
+              <label for="calc-financed">Amount Financed</label>
+              <input type="text" id="calc-financed" readonly />
+            </div>
+          </div>
+
+          <div class="calc-field" style="margin-bottom:10px;">
+            <label>Term (months)</label>
+            <div class="calc-terms" id="calc-terms">
+              <button class="calc-term-btn" data-term="24">24</button>
+              <button class="calc-term-btn" data-term="36">36</button>
+              <button class="calc-term-btn is-active" data-term="48">48</button>
+              <button class="calc-term-btn" data-term="60">60</button>
+              <button class="calc-term-btn" data-term="72">72</button>
+              <button class="calc-term-btn" data-term="84">84</button>
+            </div>
+          </div>
+
+          <div class="calc-field">
+            <label for="calc-apr">APR (%)</label>
+            <input type="number" id="calc-apr" value="7.9" step="0.1" min="0" max="30" />
+          </div>
+
+          <div class="calc-result">
+            <div class="calc-result-label">Est. Monthly Payment</div>
+            <div class="calc-monthly-payment" id="calc-monthly">$&mdash;<small>/mo</small></div>
+            <div class="calc-breakdown" id="calc-breakdown"></div>
+          </div>
+
+          <a class="modal-approval-btn" href="#approval" id="modal-approval-link">Get Pre-Approved →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile sticky CTA bar - hidden on desktop via CSS -->
+  <div class="mobile-bar" role="complementary" aria-label="Quick action bar">
+    <div class="mobile-bar-inner">
+      <a class="btn btn-light" href="tel:18005954021" aria-label="Call AmeriTrust Auto sales team">
+        📞 Call Sales
+      </a>
+      <a class="btn btn-primary" href="#approval">Get Approved →</a>
+    </div>
+  </div>
+
+  <script>
+    // ── Favorite hearts (runs first — creates .vehicle-img-wrap) ─────────
+    (function () {
+      const HEART_SVG = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`;
+
+      document.querySelectorAll('.vehicle-card').forEach((card, i) => {
+        const img = card.querySelector('.vehicle-card-img');
+        if (!img) return;
+
+        const wrap = document.createElement('div');
+        wrap.className = 'vehicle-img-wrap';
+        img.parentNode.insertBefore(wrap, img);
+        wrap.appendChild(img);
+
+        const btn = document.createElement('button');
+        btn.className = 'fav-btn';
+        btn.setAttribute('aria-label', 'Save to favorites');
+        btn.setAttribute('aria-pressed', 'false');
+        btn.innerHTML = HEART_SVG;
+        wrap.appendChild(btn);
+
+        const key = `at-fav-${i}`;
+        if (localStorage.getItem(key) === '1') {
+          btn.classList.add('is-faved');
+          btn.setAttribute('aria-pressed', 'true');
+        }
+
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const faved = btn.classList.toggle('is-faved');
+          btn.setAttribute('aria-pressed', String(faved));
+          localStorage.setItem(key, faved ? '1' : '0');
+        });
+      });
+    })();
+
+    // ── Vehicle detail modal (runs second — .vehicle-img-wrap now exists) ─
+    (function () {
+      const TX_TAX = 0.0625;
+
+      function pImg(id, w, h) {
+        return 'https://images.pexels.com/photos/' + id + '/pexels-photo-' + id + '.jpeg?auto=compress&cs=tinysrgb&w=' + (w||900) + '&h=' + (h||560) + '&fit=crop';
+      }
+
+      function fmt(n) {
+        return '$' + Math.round(n).toLocaleString('en-US');
+      }
+
+      const DATA = [
+        { year:2024, make:'Ford', model:'F-150', trim:'XLT SuperCrew 4x4', price:42995, lease:589,
+          images:[pImg('2920064'), pImg('1592384'), pImg('3689659')],
+          features:['Trailer Tow Package (13,000 lb)','Pro Power Onboard Generator','SYNC 4 — 12" Touchscreen','Ford Co-Pilot360 Assist+','Heated & Ventilated Front Seats','Apple CarPlay & Android Auto'],
+          condition:'Used', mileage:'24,521 mi', vin:'1FTFW1E54PKD12345', stock:'5240101',
+          extColor:'Antimatter Blue', intColor:'Black', style:'Crew Cab',
+          transmission:'Automatic, 10-Speed', engine:'5.0L V8, 400HP', mpg:'15 City / 21 HWY', drivetrain:'4WD', fuel:'Gas' },
+
+        { year:2023, make:'Toyota', model:'RAV4', trim:'XLE Premium AWD', price:34500, lease:429,
+          images:[pImg('116675'), pImg('1719648'), pImg('1007410')],
+          features:['Toyota Safety Sense 2.0','8" Multimedia Touchscreen','Heated Front Seats','Power Moonroof','All-Wheel Drive','Apple CarPlay & Android Auto'],
+          condition:'Used', mileage:'18,340 mi', vin:'2T3RWRFV4PW012345', stock:'5240202',
+          extColor:'Blueprint', intColor:'Black', style:'SUV',
+          transmission:'Automatic, 8-Speed', engine:'2.5L 4-Cyl, 203HP', mpg:'27 City / 35 HWY', drivetrain:'AWD', fuel:'Gas' },
+
+        { year:2024, make:'Chevrolet', model:'Silverado 1500', trim:'LT Crew Cab 4WD', price:48750, lease:639,
+          images:[pImg('3802510'), pImg('1279330'), pImg('2920064')],
+          features:['Z71 Off-Road Package','EZ Lift-and-Lower Tailgate','Bose Premium Audio — 8 Speakers','Heated Front Seats','Teen Driver Technology','Wireless Apple CarPlay & Android Auto'],
+          condition:'Used', mileage:'12,988 mi', vin:'3GCUYDEL4RG012345', stock:'5240303',
+          extColor:'Black', intColor:'Jet Black', style:'Crew Cab',
+          transmission:'Automatic, 8-Speed', engine:'5.3L V8, 355HP', mpg:'15 City / 20 HWY', drivetrain:'4WD', fuel:'Gas' },
+
+        { year:2022, make:'Honda', model:'Accord', trim:'Sport 2.0T CVT', price:27995, lease:349,
+          images:[pImg('1545743'), pImg('244206'), pImg('707046')],
+          features:['Honda Sensing Suite','10.2" HD Touchscreen','Wireless Apple CarPlay','Heated Front Seats','Remote Engine Start','Sport Mesh Grille'],
+          condition:'Used', mileage:'31,204 mi', vin:'1HGCV2F34NA012345', stock:'5240404',
+          extColor:'Sonic Gray Pearl', intColor:'Black', style:'Sedan',
+          transmission:'CVT Automatic', engine:'2.0L Turbo 4-Cyl, 192HP', mpg:'29 City / 35 HWY', drivetrain:'FWD', fuel:'Gas' },
+
+        { year:2023, make:'Jeep', model:'Grand Cherokee', trim:'Limited 4x4', price:51200, lease:679,
+          images:[pImg('1231643'), pImg('1007410'), pImg('170811')],
+          features:['Quadra-Trac II 4x4 System','Uconnect 10.1" Touchscreen','Heated Leather Seats','Adaptive Cruise Control','Panoramic Sunroof','McIntosh Sound System'],
+          condition:'Used', mileage:'14,770 mi', vin:'1C4RJFBG4PC012345', stock:'5240505',
+          extColor:'Bright White', intColor:'Global Black', style:'SUV',
+          transmission:'Automatic, 8-Speed', engine:'3.6L V6, 293HP', mpg:'19 City / 26 HWY', drivetrain:'4x4', fuel:'Gas' },
+
+        { year:2023, make:'Hyundai', model:'Tucson', trim:'SEL Convenience AWD', price:31995, lease:399,
+          images:[pImg('170811'), pImg('1719648'), pImg('116675')],
+          features:['SmartSense Safety Suite','10.25" Navigation Display','Heated Front & Rear Seats','Remote Smart Parking Assist','Dual-Zone Auto Climate','Wireless Charging Pad'],
+          condition:'Used', mileage:'9,812 mi', vin:'5NMJE3AE8PH012345', stock:'5240606',
+          extColor:'Shimmering Silver', intColor:'Black', style:'SUV',
+          transmission:'Automatic, 6-Speed', engine:'2.5L 4-Cyl, 187HP', mpg:'26 City / 33 HWY', drivetrain:'AWD', fuel:'Gas' },
+
+        { year:2023, make:'BMW', model:'3 Series', trim:'330i xDrive Sedan', price:39800, lease:499,
+          images:[pImg('244206'), pImg('1545743'), pImg('28891882')],
+          features:['xDrive All-Wheel Drive','12.3" BMW Live Cockpit','Parking Assistant','Harman Kardon Sound','Heated Front Seats','Gesture & Voice Control'],
+          condition:'Used', mileage:'19,450 mi', vin:'WBA53BH00PCK12345', stock:'5240707',
+          extColor:'Alpine White', intColor:'Black Vernasca', style:'Sedan',
+          transmission:'Automatic, 8-Speed', engine:'2.0L TwinPower Turbo, 255HP', mpg:'26 City / 36 HWY', drivetrain:'AWD', fuel:'Gas' },
+
+        { year:2023, make:'Mazda', model:'CX-5', trim:'Touring AWD', price:33200, lease:419,
+          images:[pImg('1719648'), pImg('3729464'), pImg('116675')],
+          features:['i-Activ All-Wheel Drive','10.25" Center Infotainment','Mazda Radar Cruise Control','Heated Front Seats','Power Liftgate','Bose 10-Speaker Audio'],
+          condition:'Used', mileage:'22,133 mi', vin:'JM3KFBCM4P0012345', stock:'5240808',
+          extColor:'Soul Red Crystal', intColor:'Black', style:'SUV',
+          transmission:'Automatic, 6-Speed', engine:'2.5L 4-Cyl, 187HP', mpg:'26 City / 31 HWY', drivetrain:'AWD', fuel:'Gas' },
+
+        { year:2024, make:'GMC', model:'Canyon', trim:'AT4 Crew Cab 4WD', price:44995, lease:579,
+          images:[pImg('4674104'), pImg('2920064'), pImg('3802510')],
+          features:['MultiPro 6-Function Tailgate','Off-Road Suspension Package','11.3" GMC Infotainment Display','Bose Premium Sound — 7 Speakers','Heated Front Seats','Wireless Apple CarPlay'],
+          condition:'Used', mileage:'8,654 mi', vin:'1GTG6DEF5R1012345', stock:'5240909',
+          extColor:'Greenstone', intColor:'Jet Black', style:'Crew Cab',
+          transmission:'Automatic, 8-Speed', engine:'2.7L Turbo 4-Cyl, 310HP', mpg:'17 City / 22 HWY', drivetrain:'4WD', fuel:'Gas' },
+
+        { year:2021, make:'Subaru', model:'Outback', trim:'Onyx Edition XT CVT', price:29500, lease:369,
+          images:[pImg('3729464'), pImg('1719648'), pImg('1009871')],
+          features:['EyeSight Driver Assist','11.6" Multimedia Plus Touchscreen','Symmetrical All-Wheel Drive','X-MODE for Off-Road Terrain','Heated Front Seats','Harman Kardon Audio'],
+          condition:'Used', mileage:'38,912 mi', vin:'4S4BTGND3M3012345', stock:'5241010',
+          extColor:'Crystal Black Silica', intColor:'Black', style:'Wagon',
+          transmission:'CVT Automatic', engine:'2.4L Turbo Boxer, 260HP', mpg:'23 City / 30 HWY', drivetrain:'AWD', fuel:'Gas' },
+
+        { year:2023, make:'Kia', model:'Telluride', trim:'EX AWD', price:46800, lease:599,
+          images:[pImg('1007410'), pImg('1231643'), pImg('3422924')],
+          features:['Standard All-Wheel Drive','Dual 10.25" Touchscreens','Nappa Leather Seating','Surround View Monitor','8-Passenger Seating','Harman Kardon Premium Audio'],
+          condition:'Used', mileage:'16,288 mi', vin:'5XYP34HC8PG012345', stock:'5241111',
+          extColor:'Snow White Pearl', intColor:'Black', style:'SUV',
+          transmission:'Automatic, 8-Speed', engine:'3.8L V6, 291HP', mpg:'20 City / 26 HWY', drivetrain:'AWD', fuel:'Gas' },
+      ];
+
+      const SUMMARY_FIELDS = [
+        ['🚗','Vehicle Condition','condition'], ['⏱','Mileage','mileage'],
+        ['🔢','VIN','vin'],                     ['🏷','Stock Number','stock'],
+        ['🎨','Exterior Color','extColor'],      ['🪑','Interior Color','intColor'],
+        ['🚙','Style','style'],                  ['⚙️','Transmission','transmission'],
+        ['🔧','Engine','engine'],                ['⛽','MPG','mpg'],
+        ['🔄','Drive Train','drivetrain'],        ['💧','Fuel Type','fuel'],
+      ];
+
+      let currentVehicle = null;
+      let currentTerm = 48;
+
+      const backdrop  = document.getElementById('vehicle-modal');
+      const closeBtn  = document.getElementById('modal-close');
+      const mainImg   = document.getElementById('modal-main-img');
+      const thumbsEl  = document.getElementById('modal-thumbs');
+
+      const el = {
+        yearMake:    document.getElementById('modal-year-make'),
+        name:        document.getElementById('modal-vehicle-name'),
+        trim:        document.getElementById('modal-trim-label'),
+        price:       document.getElementById('modal-vehicle-price'),
+        lease:       document.getElementById('modal-vehicle-lease'),
+        features:    document.getElementById('modal-features'),
+        summary:     document.getElementById('modal-summary'),
+        calcDisplay: document.getElementById('calc-price-display'),
+        calcDown:    document.getElementById('calc-down'),
+        calcTrade:   document.getElementById('calc-trade'),
+        calcTax:     document.getElementById('calc-tax'),
+        calcFin:     document.getElementById('calc-financed'),
+        calcApr:     document.getElementById('calc-apr'),
+        calcMonthly: document.getElementById('calc-monthly'),
+        calcBreak:   document.getElementById('calc-breakdown'),
+      };
+
+      function calcPayment() {
+        if (!currentVehicle) return;
+        var price  = currentVehicle.price;
+        var down   = Math.max(0, parseFloat(el.calcDown.value)  || 0);
+        var trade  = Math.max(0, parseFloat(el.calcTrade.value) || 0);
+        var apr    = Math.max(0, parseFloat(el.calcApr.value)   || 0);
+        var tax    = Math.max(0, price - trade) * TX_TAX;
+        var fin    = Math.max(0, price - down - trade + tax);
+        el.calcTax.value = fmt(tax);
+        el.calcFin.value = fmt(fin);
+        var monthly;
+        if (apr === 0) {
+          monthly = fin / currentTerm;
+        } else {
+          var r = apr / 100 / 12;
+          monthly = fin * (r * Math.pow(1+r, currentTerm)) / (Math.pow(1+r, currentTerm) - 1);
+        }
+        el.calcMonthly.innerHTML = fmt(monthly) + '<small>/mo</small>';
+        el.calcBreak.textContent = currentTerm + ' mo  ·  ' + apr + '% APR  ·  ' + fmt(fin) + ' financed';
+      }
+
+      function setThumb(idx) {
+        mainImg.src = currentVehicle.images[idx];
+        mainImg.alt = currentVehicle.year + ' ' + currentVehicle.make + ' ' + currentVehicle.model;
+        document.querySelectorAll('.modal-thumb').forEach(function(t, i) {
+          t.classList.toggle('is-active', i === idx);
+        });
+      }
+
+      function openModal(idx) {
+        currentVehicle = DATA[idx];
+        var v = currentVehicle;
+
+        el.yearMake.textContent = v.year + ' \u00b7 ' + v.make;
+        el.name.textContent     = v.model;
+        el.trim.textContent     = v.trim;
+        el.price.textContent    = 'Purchase price: ' + fmt(v.price);
+        el.lease.innerHTML      = fmt(v.lease) + '<small>/mo est. lease</small>';
+        el.calcDisplay.textContent = fmt(v.price);
+
+        // Gallery
+        thumbsEl.innerHTML = '';
+        v.images.forEach(function(src, i) {
+          var thumb = document.createElement('img');
+          thumb.src = src.replace('w=900&h=560', 'w=160&h=110');
+          thumb.alt = 'View ' + (i + 1);
+          thumb.className = 'modal-thumb' + (i === 0 ? ' is-active' : '');
+          thumb.addEventListener('click', function() { setThumb(i); });
+          thumbsEl.appendChild(thumb);
+        });
+        setThumb(0);
+
+        // Features
+        el.features.innerHTML = v.features.map(function(f) { return '<li>' + f + '</li>'; }).join('');
+
+        // Summary
+        el.summary.innerHTML = SUMMARY_FIELDS.map(function(row) {
+          return '<div class="summary-item">' +
+            '<span class="summary-icon" aria-hidden="true">' + row[0] + '</span>' +
+            '<div><span class="summary-label">' + row[1] + '</span>' +
+            '<span class="summary-value">' + v[row[2]] + '</span></div></div>';
+        }).join('');
+
+        // Calculator defaults
+        el.calcDown.value  = 2000;
+        el.calcTrade.value = 0;
+        el.calcApr.value   = 7.9;
+        document.querySelectorAll('.calc-term-btn').forEach(function(b) {
+          b.classList.toggle('is-active', parseInt(b.dataset.term) === currentTerm);
+        });
+        calcPayment();
+
+        // Reset to first tab on every open
+        resetTabs();
+
+        // Show modal
+        backdrop.removeAttribute('hidden');
+        requestAnimationFrame(function() { backdrop.classList.add('is-open'); });
+        document.body.style.overflow = 'hidden';
+        setTimeout(function() { closeBtn.focus(); }, 60);
+      }
+
+      function closeModal() {
+        backdrop.classList.remove('is-open');
+        setTimeout(function() {
+          backdrop.setAttribute('hidden', '');
+          document.body.style.overflow = '';
+        }, 220);
+      }
+
+      // Tab switching (tablet + mobile)
+      document.querySelectorAll('.modal-tab-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var target = btn.dataset.tab;
+          document.querySelectorAll('.modal-tab-btn').forEach(function(b) {
+            b.classList.remove('is-active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          document.querySelectorAll('.modal-col').forEach(function(col) {
+            col.classList.remove('is-active');
+          });
+          btn.classList.add('is-active');
+          btn.setAttribute('aria-selected', 'true');
+          var panel = document.getElementById('modal-panel-' + target);
+          if (panel) panel.classList.add('is-active');
+        });
+      });
+
+      // Reset tabs to first tab whenever modal opens
+      function resetTabs() {
+        document.querySelectorAll('.modal-tab-btn').forEach(function(b, i) {
+          b.classList.toggle('is-active', i === 0);
+          b.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+        });
+        document.querySelectorAll('.modal-col').forEach(function(col, i) {
+          col.classList.toggle('is-active', i === 0);
+        });
+      }
+
+      closeBtn.addEventListener('click', closeModal);
+      backdrop.addEventListener('click', function(e) { if (e.target === backdrop) closeModal(); });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !backdrop.hasAttribute('hidden')) closeModal();
+      });
+
+      // Calculator listeners
+      [el.calcDown, el.calcTrade, el.calcApr].forEach(function(inp) {
+        inp.addEventListener('input', calcPayment);
+      });
+
+      document.querySelectorAll('.calc-term-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          currentTerm = parseInt(btn.dataset.term);
+          document.querySelectorAll('.calc-term-btn').forEach(function(b) { b.classList.remove('is-active'); });
+          btn.classList.add('is-active');
+          calcPayment();
+        });
+      });
+
+      // Inject Quick View buttons + make cards clickable
+      document.querySelectorAll('.vehicle-card').forEach(function(card, i) {
+        if (i >= DATA.length) return;
+
+        // Button goes into the image wrap (bottom-left, mirroring the heart top-right)
+        var imgWrap = card.querySelector('.vehicle-img-wrap');
+
+        var qv = document.createElement('button');
+        qv.className = 'quick-view-btn';
+        qv.setAttribute('aria-label', 'Quick view ' + DATA[i].year + ' ' + DATA[i].make + ' ' + DATA[i].model);
+        qv.innerHTML =
+          '<span class="qv-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>' +
+          '<span class="qv-label">Quick View \u2192</span>';
+        imgWrap.appendChild(qv);
+
+        function handleOpen(e) {
+          if (e.target.closest('.fav-btn')) return;
+          openModal(i);
+        }
+
+        qv.addEventListener('click', handleOpen);
+        card.addEventListener('click', handleOpen);
+        card.style.cursor = 'pointer';
+      });
+
+    })();
+
+    // ── Carousel arrows ──────────────────────────────────────────────────
+    (function () {
+      const track = document.getElementById('carousel-track');
+      const prev  = document.getElementById('carousel-prev');
+      const next  = document.getElementById('carousel-next');
+      if (!track || !prev || !next) return;
+
+      const SCROLL_BY = 264; // card width + gap
+
+      function jumpTo(pos) {
+        // Instant reposition with no scroll animation (imperceptible to the user)
+        track.style.scrollBehavior = 'auto';
+        track.scrollLeft = pos;
+        // Restore smooth scrolling on the next frame
+        requestAnimationFrame(() => { track.style.scrollBehavior = ''; });
+      }
+
+      next.addEventListener('click', () => {
+        const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+        if (atEnd) {
+          jumpTo(0);
+        } else {
+          track.scrollBy({ left: SCROLL_BY, behavior: 'smooth' });
+        }
+      });
+
+      prev.addEventListener('click', () => {
+        const atStart = track.scrollLeft <= 0;
+        if (atStart) {
+          jumpTo(track.scrollWidth - track.clientWidth);
+        } else {
+          track.scrollBy({ left: -SCROLL_BY, behavior: 'smooth' });
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
