@@ -1403,6 +1403,24 @@
       .inventory-grid, .feature-grid { grid-template-columns: 1fr; }
       section { padding: 52px 0; }
     }
+
+    @media (max-width: 480px) {
+      /* Prevent any element from causing horizontal overflow */
+      html { overflow-x: clip; }
+
+      /* Tighter container padding */
+      .container { width: calc(100% - 20px); }
+
+      /* Narrower vehicle cards so the heart stays fully visible */
+      .vehicle-card { flex: 0 0 195px; }
+
+      /* Hide carousel arrows on mobile — swipe is more natural */
+      .carousel-btn { display: none; }
+
+      /* Bottom bar full width with safe padding */
+      .mobile-bar { padding: 10px 12px; }
+      .mobile-bar-inner { width: 100%; }
+    }
   </style>
 </head>
 <body>
