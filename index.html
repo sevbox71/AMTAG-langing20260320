@@ -472,6 +472,16 @@
       margin-top: 3px;
     }
 
+    .vehicle-mileage {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      margin-top: 7px;
+    }
+
     .vehicle-pricing {
       display: flex;
       flex-direction: row-reverse; /* lease (DOM second) lands on the left */
@@ -2522,6 +2532,19 @@
         // Button goes into the image wrap (bottom-left, mirroring the heart top-right)
         var imgWrap = card.querySelector('.vehicle-img-wrap');
 
+        // Mileage label
+        var body = card.querySelector('.vehicle-card-body');
+        var pricing = body ? body.querySelector('.vehicle-pricing') : null;
+        if (body) {
+          var mileageEl = document.createElement('div');
+          mileageEl.className = 'vehicle-mileage';
+          mileageEl.innerHTML =
+            '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>' +
+            DATA[i].mileage;
+          body.insertBefore(mileageEl, pricing);
+        }
+
+        // Quick view button (on image)
         var qv = document.createElement('button');
         qv.className = 'quick-view-btn';
         qv.setAttribute('aria-label', 'Quick view ' + DATA[i].year + ' ' + DATA[i].make + ' ' + DATA[i].model);
